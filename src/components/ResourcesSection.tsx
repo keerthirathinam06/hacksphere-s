@@ -1,7 +1,8 @@
 import { Button } from '@/components/ui/button';
 import { FileText, Presentation, Download, ExternalLink, BookOpen } from 'lucide-react';
 import eventBrochure from '@/assets/eventbrochure.pdf';
-import rulesAndGuidelines from '@/assets/Hackshare_General_Rules.pdf';
+import Hacksphere2026Rules from '@/assets/Hacksphere2026rules.pdf';
+
 
 const ResourcesSection = () => {
   const resources = [
@@ -27,7 +28,7 @@ const ResourcesSection = () => {
       description: "Complete hackathon rules and participation guidelines",
       buttonText: "Download Rules PDF",
       type: "download",
-      downloadUrl: rulesAndGuidelines
+      downloadUrl: Hacksphere2026Rules
     }
   ];
 

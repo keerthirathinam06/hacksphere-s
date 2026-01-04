@@ -15,21 +15,21 @@ const CoordinatorsSection = () => {
   const coordinators: Coordinator[] = [
     {
       name: "Sakthi Sabareesh B",
-      role: "Coordinator lead",
+      role: "Chairman",
       image: sakthiImage,
       phone: 7539917977,
       email: "sakthisabareeshb24bca143@skasc.ac.in",
     },
     {
       name: "Keerthivarshini R",
-      role: "Registration committee",
+      role: "vice secretary",
       image: keerthiImage,
       phone: 9489590773,
       email: "keerthivarshinir24bcc125@skasc.ac.in",
     },
     {
       name: "Raghul K",
-      role: "Review commitee",
+      role: "Secretary",
       image: raghulImage,
       phone: 7548831130,
       email: "raghulk24bcc145@skasc.ac.in",

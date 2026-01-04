@@ -93,7 +93,7 @@ const CountdownClock = () => {
 
       <div className="mt-6 text-center">
         <p className="font-mono text-xs md:text-sm text-muted-foreground">
-          Registration Period: January 2 - January 18, 2026
+          Registration Period: January 5 - January 18, 2026
         </p>
       </div>
     </div>

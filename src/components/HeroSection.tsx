@@ -108,7 +108,7 @@ const HeroSection = () => {
 
           <div className="mt-12 flex items-center justify-center gap-8 font-mono text-sm">
             <div className="text-center">
-              <p className="text-primary text-2xl font-bold neon-glow">JAN 2</p>
+              <p className="text-primary text-2xl font-bold neon-glow">JAN 5</p>
               <p className="text-muted-foreground">Registration Opens</p>
             </div>
             <div className="w-px h-12 bg-border" />
