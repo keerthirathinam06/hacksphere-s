@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { ChevronDown, ArrowRight } from 'lucide-react';
+import { ChevronDown, ArrowRight, MessageCircle } from 'lucide-react';
 import heroBg from '@/assets/hero-bg.jpg';
 import skascLogo from '@/assets/skascimg.png';
 import iicLogo from '@/assets/iic.png';
@@ -96,6 +96,12 @@ const HeroSection = () => {
                 <Button variant="hero" size="xl" className="group">
                   Register Now
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </a>
+              <a href="https://chat.whatsapp.com/KxRNKKavaIhH3VvbZK2z06" target="_blank" rel="noopener noreferrer">
+                <Button size="xl" className="group bg-[#25D366] hover:bg-[#1ebe57] text-white">
+                  <MessageCircle className="w-5 h-5" />
+                  Join WhatsApp Group
                 </Button>
               </a>
             </div>

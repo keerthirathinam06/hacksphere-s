@@ -1,4 +1,4 @@
-import { Instagram, Mail, MapPin } from 'lucide-react';
+import { Instagram, Mail, MapPin, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Social CTA */}
         <div className="mb-12 p-6 glass-effect-dark rounded-xl hover-lift shadow-glow-md animate-slide-in-left">
-          <div className="flex items-center justify-center">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a 
               href="https://www.instagram.com/skasc_computerapplications?igsh=MXg0aHEyYzVsdGgxaA==" 
               target="_blank"
@@ -19,6 +19,16 @@ const Footer = () => {
             >
               <Instagram className="w-5 h-5" />
               Follow us on Instagram for updates
+            </a>
+
+            <a
+              href="https://chat.whatsapp.com/KxRNKKavaIhH3VvbZK2z06"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 bg-[#25D366] hover:bg-[#1ebe57] text-white px-6 py-3 rounded-lg font-mono text-sm transition-all duration-300 hover-lift hover:shadow-glow-md"
+            >
+              <MessageCircle className="w-5 h-5" />
+              Join our WhatsApp group
             </a>
           </div>
         </div>
@@ -39,6 +49,14 @@ const Footer = () => {
                 className="w-10 h-10 rounded-lg glass-effect flex items-center justify-center text-muted-foreground hover-glow hover:text-primary transition-all duration-300 animate-glow-pulse"
               >
                 <Instagram className="w-5 h-5" />
+              </a>
+              <a
+                href="https://chat.whatsapp.com/KxRNKKavaIhH3VvbZK2z06"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-lg glass-effect flex items-center justify-center text-[#25D366] hover-glow hover:text-[#25D366] transition-all duration-300"
+              >
+                <MessageCircle className="w-5 h-5" />
               </a>
             </div>
           </div>
