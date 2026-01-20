@@ -12,15 +12,9 @@ const HeroSection = () => {
   useEffect(() => {
     const checkRegistrationStatus = () => {
       const now = new Date();
-      const year = now.getFullYear();
       
-      // Jan 18, 2026 at 11:59 PM
-      const registrationEnd = new Date(year, 0, 18, 23, 59, 59);
-      
-      // If we're past the registration end date, set to next year
-      if (now > registrationEnd) {
-        registrationEnd.setFullYear(year + 1);
-      }
+      // Fixed registration end date: Jan 18, 2026 at 11:59 PM
+      const registrationEnd = new Date(2026, 0, 18, 23, 59, 59);
       
       const difference = registrationEnd.getTime() - now.getTime();
       setIsRegistrationActive(difference > 0);

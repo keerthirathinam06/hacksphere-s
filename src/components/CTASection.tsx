@@ -13,8 +13,8 @@ const CTASection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 glass-effect rounded-full px-4 py-2 mb-6 animate-slide-in-left shadow-glow-sm">
-            <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-            <span className="font-mono text-primary text-sm text-glow">Registration Open</span>
+            <span className="w-2 h-2 bg-destructive rounded-full animate-pulse" />
+            <span className="font-mono text-destructive text-sm text-glow">Registration Closed</span>
           </div>
 
           <h2 className="font-orbitron text-4xl md:text-6xl font-bold text-foreground mb-6 text-gradient-animated animate-bounce-in">
@@ -22,17 +22,19 @@ const CTASection = () => {
           </h2>
 
           <p className="font-mono text-muted-foreground text-lg mb-12 max-w-2xl mx-auto animate-slide-in-right">
-            Join hundreds of innovators and build something extraordinary. 
-            Registration closes January 18, 2026.
+            Join hundreds of innovators and build something extraordinary.
+            Registration for this edition is now closed.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-bounce-in" style={{ animationDelay: '0.2s' }}>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSevYcxirDfzMj_hmP8Aqq9_kU4Li02TTCLDxdRZevrBossJ5A/viewform?usp=header" target="_blank" rel="noopener noreferrer">
-              <Button variant="hero" size="xl" className="group hover-lift hover:shadow-glow-lg transition-all duration-300">
-                Register Your Team
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </a>
+            <Button
+              variant="outline"
+              size="xl"
+              className="group cursor-not-allowed opacity-70"
+              disabled
+            >
+              Registration Closed
+            </Button>
 
             <a href={brochure} download>
               <Button variant="outline" size="lg" className="flex items-center gap-2">

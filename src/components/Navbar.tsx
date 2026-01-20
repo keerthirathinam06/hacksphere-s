@@ -40,11 +40,9 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSevYcxirDfzMj_hmP8Aqq9_kU4Li02TTCLDxdRZevrBossJ5A/viewform?usp=header" target="_blank" rel="noopener noreferrer">
-            <Button variant="neon" size="sm">
-              Register Now
-            </Button>
-          </a>
+          <Button variant="outline" size="sm" className="cursor-not-allowed opacity-70" disabled>
+            Registration Closed
+          </Button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -70,11 +68,14 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSevYcxirDfzMj_hmP8Aqq9_kU4Li02TTCLDxdRZevrBossJ5A/viewform?usp=header" target="_blank" rel="noopener noreferrer">
-              <Button variant="neon" size="sm" className="w-fit">
-                Register Now
-              </Button>
-            </a>
+            <Button
+              variant="outline"
+              size="sm"
+              className="w-fit cursor-not-allowed opacity-70"
+              disabled
+            >
+              Registration Closed
+            </Button>
           </div>
         </div>
       )}
