@@ -1,6 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Download } from 'lucide-react';
-import brochure from '../assets/eventbrochure.pdf';
+import { ArrowRight } from 'lucide-react';
 import CountdownClock from '@/components/CountdownClock';
 
 const CTASection = () => {
@@ -35,22 +34,9 @@ const CTASection = () => {
             >
               Registration Closed
             </Button>
-
-            <a href={brochure} download>
-              <Button variant="outline" size="lg" className="flex items-center gap-2">
-                <Download className="w-4 h-4" />
-                Download Brochure
-              </Button>
-            </a>
-
-            <a href="mailto:hacksphereskasc@gmail.com">
-              <Button variant="neon" size="lg" className="hover-lift hover:shadow-glow-lg transition-all duration-300">
-                Contact Us
-              </Button>
-            </a>
           </div>
           <p className="font-mono text-muted-foreground text-sm mt-2">
-            For any query, press <span className="text-primary font-semibold">Contact Us</span> to email us.
+            For any query, contact information will be provided during the event.
           </p>
 
           {/* Prize Highlight */}

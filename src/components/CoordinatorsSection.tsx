@@ -7,32 +7,24 @@ type Coordinator = {
   name: string;
   role: string;
   image?: string;
-  phone?: number | string;
-  email?: string;
 };
 
 const CoordinatorsSection = () => {
   const coordinators: Coordinator[] = [
     {
-      name: "Sakthi Sabareesh B",
+      name: "",
       role: "Chairman",
       image: sakthiImage,
-      phone: 7539917977,
-      email: "sakthisabareeshb24bca143@skasc.ac.in",
     },
     {
       name: "Keerthivarshini R",
       role: "vice secretary",
       image: keerthiImage,
-      phone: 9489590773,
-      email: "keerthivarshinir24bcc125@skasc.ac.in",
     },
     {
       name: "Raghul K",
       role: "Secretary",
       image: raghulImage,
-      phone: 7548831130,
-      email: "raghulk24bcc145@skasc.ac.in",
     }
   ];
 
@@ -79,43 +71,8 @@ const CoordinatorsSection = () => {
                   {coordinator.name}
                 </h3>
                 <p className="font-mono text-sm text-primary">{coordinator.role}</p>
-                <div className="mt-4 flex items-center justify-center gap-3">
-                  {coordinator.phone ? (
-                    <a 
-                      href={`tel:${coordinator.phone}`} 
-                      className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary/10 border border-primary/30 text-primary hover:bg-primary hover:text-background transition-all duration-300 hover:shadow-[0_0_15px_hsl(180_100%_50%/0.3)]" 
-                      aria-label={`Call ${coordinator.name}`} 
-                      title="Call"
-                    >
-                      <Phone className="w-5 h-5" />
-                    </a>
-                  ) : (
-                    <button 
-                      disabled 
-                      className="flex items-center justify-center w-10 h-10 rounded-lg bg-muted/20 border border-border text-muted-foreground/40 cursor-not-allowed" 
-                      title="Call"
-                    >
-                      <Phone className="w-5 h-5" />
-                    </button>
-                  )}
-                  {coordinator.email ? (
-                    <a 
-                      href={`mailto:${coordinator.email}`} 
-                      className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary/10 border border-primary/30 text-primary hover:bg-primary hover:text-background transition-all duration-300 hover:shadow-[0_0_15px_hsl(180_100%_50%/0.3)]" 
-                      aria-label={`Email ${coordinator.name}`} 
-                      title={`Email: ${coordinator.email}`}
-                    >
-                      <Mail className="w-5 h-5" />
-                    </a>
-                  ) : (
-                    <button 
-                      disabled 
-                      className="flex items-center justify-center w-10 h-10 rounded-lg bg-muted/20 border border-border text-muted-foreground/40 cursor-not-allowed" 
-                      title="Email"
-                    >
-                      <Mail className="w-5 h-5" />
-                    </button>
-                  )}
+                <div className="mt-4 flex items-center justify-center gap-3 text-muted-foreground text-xs font-mono">
+                  <span>Contact details will be provided separately.</span>
                 </div>
               </div>
             </div>

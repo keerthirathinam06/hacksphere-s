@@ -1,4 +1,4 @@
-import { Instagram, Mail, MapPin, MessageCircle } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -8,28 +8,10 @@ const Footer = () => {
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-neon-purple/5 rounded-full blur-[120px] animate-pulse-glow" />
       
       <div className="container mx-auto px-4 relative z-10">
-        {/* Social CTA */}
+        {/* Social CTA (removed external social links) */}
         <div className="mb-12 p-6 glass-effect-dark rounded-xl hover-lift shadow-glow-md animate-slide-in-left">
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a 
-              href="https://www.instagram.com/skasc_computerapplications?igsh=MXg0aHEyYzVsdGgxaA==" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#F77737] hover:opacity-90 text-white px-6 py-3 rounded-lg font-mono text-sm transition-all duration-300 hover-lift hover:shadow-glow-md"
-            >
-              <Instagram className="w-5 h-5" />
-              Follow us on Instagram for updates
-            </a>
-
-            <a
-              href="https://chat.whatsapp.com/KxRNKKavaIhH3VvbZK2z06"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 bg-[#25D366] hover:bg-[#1ebe57] text-white px-6 py-3 rounded-lg font-mono text-sm transition-all duration-300 hover-lift hover:shadow-glow-md"
-            >
-              <MessageCircle className="w-5 h-5" />
-              Join our WhatsApp group
-            </a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 font-mono text-sm text-muted-foreground">
+            <span>Stay tuned for updates on official channels.</span>
           </div>
         </div>
 
@@ -43,21 +25,8 @@ const Footer = () => {
               The ultimate hackathon experience where innovation meets opportunity. 
               Join us and shape the future of technology.
             </p>
-            <div className="flex items-center gap-4">
-              <a 
-                href="https://www.instagram.com/skasc_computerapplications?igsh=MXg0aHEyYzVsdGgxaA=="
-                className="w-10 h-10 rounded-lg glass-effect flex items-center justify-center text-muted-foreground hover-glow hover:text-primary transition-all duration-300 animate-glow-pulse"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a
-                href="https://chat.whatsapp.com/KxRNKKavaIhH3VvbZK2z06"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg glass-effect flex items-center justify-center text-[#25D366] hover-glow hover:text-[#25D366] transition-all duration-300"
-              >
-                <MessageCircle className="w-5 h-5" />
-              </a>
+            <div className="flex items-center gap-4 text-xs text-muted-foreground font-mono">
+              <span>Social media links are not available.</span>
             </div>
           </div>
 
@@ -75,15 +44,13 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contact (no direct personal details) */}
           <div className="glass-effect rounded-lg p-4 animate-slide-in-right shadow-glow-sm" style={{ animationDelay: '0.3s' }}>
             <h4 className="font-orbitron font-bold text-foreground mb-4 text-glow">Contact</h4>
             <ul className="space-y-3 font-mono text-sm">
-              <li className="flex items-center gap-2 text-muted-foreground hover-lift transition-all duration-300">
+              <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail className="w-4 h-4 text-primary animate-glow-pulse" />
-                <a href="mailto:hacksphereskasc@gmail.com" className="hover:text-primary transition-colors">
-                  hacksphereskasc@gmail.com
-                </a>
+                <span className="text-muted-foreground">Contact details will be shared during the event.</span>
               </li>
               <li className="flex items-start gap-2 text-muted-foreground">
                 <MapPin className="w-4 h-4 text-primary mt-1 animate-glow-pulse" style={{ animationDelay: '0.1s' }} />

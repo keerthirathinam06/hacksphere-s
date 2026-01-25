@@ -19,7 +19,6 @@ const Navbar = () => {
     { href: '#timeline', label: 'Timeline' },
     { href: '#topic', label: 'Topic' },
     { href: '#resources', label: 'Resources' },
-    { href: '#coordinators', label: 'Team' },
   ];
 
   return (
